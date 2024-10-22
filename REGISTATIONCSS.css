@@ -1,0 +1,100 @@
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:100px ;
+
+
+    #div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px black solid;
+        border-radius: 20px;
+        background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKMsvw7pdZBz-MKTvpVBrrgPDWO6fT8iyrA&s);
+        background-repeat: no-repeat;
+        background-size: 6500px;
+        gap: 10px;
+        padding: 50px 50px;
+        margin: 0px 50px ;
+            #name{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                color:greenyellow;
+                gap: 20px;
+                font-weight: bold;
+                font-size: 20px;
+
+            }
+            #email{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                color: greenyellow;
+                gap: 20px;
+                font-weight: bold;
+                font-size: 20px;
+
+           }
+           #mobile
+            {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    color:greenyellow;
+                    gap: 20px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    padding: 10px;
+                    margin: 5px;
+
+            }
+           #address
+                {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    color: greenyellow;
+                    gap: 20px;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+
+                
+
+            #submit
+            {
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                justify-content: center;
+                color: greenyellow;
+                gap: 20px;
+                font-weight: bold;
+                font-size: 20px;
+                background-color: burlywood;
+            }
+        
+            #reset
+            {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                text-decoration-color: greenyellow;
+                gap: 20px;
+                font-weight: bold;
+                font-size: 20px;
+                border-top-left-radius: rgb(147, 35, 35);
+            }
+
+     
+   }
+}
