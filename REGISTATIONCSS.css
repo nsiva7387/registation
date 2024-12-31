@@ -1,100 +1,151 @@
-#form{
+body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top:100px ;
+    
+}
+
+#div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px black solid;
+    border-radius: 5px;
+    width: 750px;
+    height: 500px;
+    background-image:url("https://th.bing.com/th/id/OIP.x-Rynim6InFmmkVHsZOqLQHaEK?w=281&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7") ;
+    mask-repeat:none;
+    background-size: 780px;
+    margin-top: 110px;
+    margin-left: 40px;
+    
+    #name {
+        color: greenyellow;
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 185px;
+
+    }
+
+    #email {
+        color: greenyellow;
+       
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 80px;
+
+    }
+
+    #mobile {
+        color: greenyellow;
+       
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+        margin: 5px;
+
+    }
+
+    #address {
+        color: greenyellow;
+       
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 60px;
+    }
 
 
-    #div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 2px black solid;
-        border-radius: 20px;
-        background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKMsvw7pdZBz-MKTvpVBrrgPDWO6fT8iyrA&s);
-        background-repeat: no-repeat;
-        background-size: 6500px;
-        gap: 10px;
-        padding: 50px 50px;
-        margin: 0px 50px ;
-            #name{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                color:greenyellow;
-                gap: 20px;
+
+/* #buttons {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 25px; */
+
+            #bu{
+
+                width:94px;
+            height: 40px;
+            margin-top: 20px;
+                gap: 50px;
+                background-color:aquamarine;
+                font-style: inherit;
                 font-weight: bold;
-                font-size: 20px;
-
-            }
-            #email{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                color: greenyellow;
-                gap: 20px;
-                font-weight: bold;
-                font-size: 20px;
-
-           }
-           #mobile
-            {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                    color:greenyellow;
-                    gap: 20px;
-                    font-weight: bold;
-                    font-size: 20px;
-                    padding: 10px;
-                    margin: 5px;
-
-            }
-           #address
-                {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                    color: greenyellow;
-                    gap: 20px;
-                    font-weight: bold;
-                    font-size: 20px;
-                }
-
+                border:4px rebeccapurple solid;
+                border-radius: 20px ;
+             
                 
-
-            #submit
-            {
-                display: flex;
-                flex-direction:column;
-                align-items: center;
-                justify-content: center;
-                color: greenyellow;
-                gap: 20px;
-                font-weight: bold;
-                font-size: 20px;
-                background-color: burlywood;
             }
-        
-            #reset
-            {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                text-decoration-color: greenyellow;
-                gap: 20px;
+            #bu1{
+
+                width:94px;
+            height: 40px;
+            margin-top: 20px;
+                gap: 50px;
+                background-color:aquamarine;
+                font-style: inherit;
                 font-weight: bold;
-                font-size: 20px;
-                border-top-left-radius: rgb(147, 35, 35);
+                border:4px rebeccapurple solid;
+                border-radius: 20px ;
+             
+                
             }
 
-     
-   }
+            #re {
+                width:94px;
+                height: 40px;
+                margin-top: 20px;
+                    gap: 50px;
+                    background-color:aquamarine;
+                font-style: inherit;
+                font-weight: bold;
+                border:4px rebeccapurple solid;
+                border-radius: 5px ;
+
+            }
+
+            #in
+            {
+                gap:20px;
+                border:2px rebeccapurple solid;
+                border-radius: 5px;
+                margin-left: 8px;
+                width: 250px;
+                height:30px ;
+            }
+            #inemail
+            {
+                gap:20px;
+                border:2px rebeccapurple solid;
+                border-radius: 5px;
+                margin-left: 8px;
+                width: 250px;
+                height:30px ;
+            }
+            #inmobile
+            {
+                gap:20px;
+                border:2px rebeccapurple solid;
+                border-radius: 5px;
+                margin-left: 8px;
+                width: 250px;
+                height:30px ;
+            }
+            #inaddress
+            {
+                gap:20px;
+                border:2px rebeccapurple solid;
+                border-radius: 5px;
+                margin-left: 8px;
+                width: 250px;
+                height:30px ;
+            }
+            /* a{
+                text-decoration: none;
+                color: black;
+            } */
 }
