@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="siv">
+    <form action="page2.html" onsubmit="return check()" >
+    <label>username:</label>
+    <input type="text"id="log">
+    <div id="div1"></div><br><br>
+    <label>password:</label>
+    <input type="text" id="pass">
+    <div id="div2"></div>
+    <br><br>
+    <button type="submit"  id="siv1">login</button>
+    <button type="reset" onclick="clear()" id="siv1">reset</button>
+</form>
+</div>
+
+</body>
+<script>
+    function clear(){
+        document.getElementById("log").value=""
+        document.getElementById("pass").value=""
+    }
+    function check()
+    {
+        let a=document.getElementById("log")
+        let b=document.getElementById("pass")
+        if(a.value==""){
+            let x=document.getElementById("div1")
+            x.innerHTML="please eneter your username"
+            x.style.color="red"
+            return false
+        }
+        else if(b.value==""){
+           let y=document.getElementById("div2")
+           y.innerHTML="please enter your password"
+           y.style.color="red"
+            return false
+        }
+
+        else{
+            alert("successfull login is completed...!")
+            return true
+        }
+    }
+</script>
+</html>
