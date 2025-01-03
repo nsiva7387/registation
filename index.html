@@ -15,7 +15,7 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <form action="page2.html" onsubmit="return check()" >
+        <form action="login.html" onsubmit="return check()">
             <div id="div1">
                 <div id="name">
                     <label>Name:</label>
@@ -31,13 +31,24 @@
                 <div id="mobile">
                     <label>Enter your mobile number :<label>
                             <input type="numbers"
-                                placeholder="eneter your number which can be still use"
-                                id="inmobile" onkeypress="return checknuber(event)">
+                                placeholder="eneter your mobile number"
+                                id="inmobile"
+                                onkeypress="return checknuber(event)">
                         </div></br>
                     <div id="address">
                         <label>Enter your address :</label>
                         <input type="text" placeholder="eneter your address"
                             id="inaddress">
+                    </div></br>
+                    <div id="password">
+                        <label>Enter your password :</label>
+                        <input type="text" placeholder="eneter your password"
+                            id="inpassword">
+                    </div></br>
+                    <div id="confrmps">
+                        <label>Conform password :</label>
+                        <input type="text" placeholder="eneter same password"
+                            id="inconfmps">
                     </div></br>
 
                 <button id="bu" type="submit">Submit</button>
@@ -55,6 +66,8 @@
                     document.getElementById("inmobile").value="";
                    
                     document.getElementById("inaddress").value="";
+                    document.getElementById("inpassword").value="";
+                    document.getElementById("inconfmps").value="";
                     
                 }
                function checknuber(e){
@@ -76,12 +89,14 @@
                          var c=document.getElementById("inmobile")
                          
                          var d=document.getElementById("inaddress")
+                         var e=document.getElementById("inpassword")
+                         var f=document.getElementById("inconfmps")
                         
                         if(a.value.trim()=="")
                         {
                 
                            alert(" Please enetr your name....!")
-                           return false
+                         return false
                           }
                           else if(b.value.trim()=="" )
                         {
@@ -95,12 +110,30 @@
                            alert(" Please enetr your mobile number ....!")
                            return false
                           }
+                          
                           else if(d.value.trim()=="" )
                         {
                 
                            alert(" Please enetr your address ....!")
                            return false
                           }
+                          else if(e.value.trim()=="")
+                        {
+                
+                           alert(" Please enetr your password ....!")
+                           return false
+                          }
+                          else if(f.value.trim()=="")
+                        {
+                
+                           alert(" Please enetr your conform password ....!")
+                           return false
+                          }
+                        else if(e.value!=f.value)
+                        {
+                            alert(" Please enetr same password ....!")
+                            return false
+                        }
             
 
                           else
@@ -110,6 +143,8 @@
                           return true
 
                          }
+
+                         
                          
                 }
             
